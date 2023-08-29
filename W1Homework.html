@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .weather {
+      display: block;
+      text-align: center;
+      list-style: none;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #1964d6;
+      font-size: 34px;
+      margin: 0;
+      text-align: center;
+      line-height: 48px;
+      font-weight: bold;
+    }
+    h2 {
+      padding: 0;
+      margin: 0;
+      font-weight: 100;
+      text-align: center;
+      font-size: 34px;
+      line-height: 48px;
+    }
+    p {
+      font-family: monospace;
+      font-size: 18px;
+      opacity: 0.7;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin: 16px;
+    }
+    li {
+      display: list-item;
+      list-style: none;
+      padding: 10px 0;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    li:hover {
+      background-color: #fefbef;
+    }
+    .high-temp {
+      font-weight: bold;
+    }
+    button {
+      display: block;
+      margin: 2px auto;
+      color: #fff;
+      background: #1a64d6;
+      padding: 16px 24px;
+      font-size: 16px;
+      border-radius: 30px;
+      line-height: 22px;
+      box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+      border: 1px solid #1a64d6;
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      background: #fff;
+      color: #1a64d6;
+      cursor: pointer;
+    }
+    .name {
+      font-family: monospace;
+      opacity: 0.7;
+      font-size: 18px;
+      margin: 23px;
+    }
+  </style>
+  <body>
+    <h1>
+      🌤️
+      <br />
+      Currently 15° in London
+    </h1>
+    <h2>11° / <span class="high-temp">21°</span></h2>
+    <div class="weather">
+      <ul>
+        <li>
+          <h3>🌧️Tomorrow</h3>
+          <p>11°/ <span class="high-temp">20°</span></p>
+        </li>
+        <li>
+          <h3>⛅️Wednesday</h3>
+          <p>11° / <span class="high-temp">20°</span></p>
+        </li>
+        <li>
+          <h3>🌧️Thursday</h3>
+          <p>13° / <span class="high-temp">17°</span></p>
+        </li>
+        <br />
+        <button>Change city</button>
+        <div class="name">Coded by Stefanie Mehanovic</div>
+      </ul>
+    </div>
+  </body>
+</html>
