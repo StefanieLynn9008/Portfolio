@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragons 🐉</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        112.1deg,
+        rgb(32, 38, 57) 11.4%,
+        rgb(63, 76, 119) 70.2%
+      );
+    }
+    h1 {
+      text-align: center;
+      color: #feb24e;
+      font-size: 50px;
+      font-family: "Times New Roman", Times, serif;
+      line-height: 0.5;
+    }
+    h2 {
+      text-align: center;
+      color: #e5a769;
+      border: 1px solid #fff;
+      padding: 18px;
+      font-size: 25px;
+      border-radius: 4px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      color: #fff;
+    }
+    span {
+      line-height: 1.5;
+      font-size: 16px;
+      margin: 20px 0 10px;
+      color: #fff;
+      display: block;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background-color: #334052;
+      color: #fff;
+      font-size: 30px;
+      border-radius: 10px;
+      padding: 15px 25px;
+      border: none;
+      font-family: "Times New Roman", Times, serif;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    button:hover {
+      opacity: 0.7;
+      cursor: pointer;
+      transition: all 250ms ease-in-out;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px 60px;
+    }
+    .learn-more {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #feb24e;
+      font-size: 11px;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      font-size: 16px;
+    }
+    .myself {
+      text-decoration: none;
+      color: #feb24e;
+    }
+    .myself:hover {
+      text-decoration: underline;
+    }
+    .made-by {
+      text-decoration: wavy;
+    }
+  </style>
+  <body>
+    <div class="content">
+      <h1>🐉</h1>
+      <h1>Dragons</h1>
+      <h2>Mythical Legends</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/095/688/original/red_dragon.jpeg?1693790020"
+        alt="red dragon"
+      />
+      <hr />
+      <p>
+        <strong>A dragon</strong> is a large magical legendary creature that
+        appears in the folklore of many cultures worldwide. Beliefs about
+        dragons vary considerably through regions, but dragons in western
+        cultures since the High Middle Ages have often been depicted as winged,
+        horned, and capable of breathing fire. Dragons in eastern cultures are
+        usually depicted as wingless, four-legged, serpentine creatures with
+        above-average intelligence. Commonalities between dragons' traits are
+        often a hybridization of feline, reptilian, mammal, and avian features.
+        Scholars believe vast extinct or migrating crocodiles bear the closest
+        resemblance, especially when encountered in forested or swampy areas,
+        and are most likely the template of modern Oriental dragon imagery.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Dragon"
+        target="_blank"
+        class="learn-more"
+      >
+        <em>Learn more on Wikipedia</em>
+      </a>
+      <button class="shop-button">Buy Dragon Art 🎨</button>
+      <span class="footer">
+        This page was built by
+        <a
+          class="myself"
+          href="https://github.com/StefanieLynn9008"
+          target="_blank"
+        >
+          Stefanie Mehanovic
+        </a>
+      </span>
+    </div>
+    <script>
+      function shop() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favorite emoji?");
+        let like = prompt("Do you like dragons?");
+        like = like.toLowerCase().trim();
+        if (like === "yes") {
+          alert(
+            "Thank you, " +
+              name +
+              " ! We will be in touch by email, meanwhile go learn more about dragons! " +
+              emoji
+          );
+        } else {
+          alert(
+            "I am sorry, " +
+              name +
+              " ! We wont be in touch by email, meanwhile try to learn more about dragons! " +
+              emoji
+          );
+        }
+      }
+
+      let shopButton = document.querySelector(".shop-button");
+      shopButton.addEventListener("click", shop);
+    </script>
+  </body>
+</html>
